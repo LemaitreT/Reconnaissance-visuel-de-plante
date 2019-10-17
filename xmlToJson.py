@@ -19,6 +19,7 @@ def doConvertion(path):
 
 
 chemin = os.getcwd()+"/train/";
-print('Penser à renseigner votre chemin vers les fichiers XML dans le script ! :)');
-
-doConvertion(chemin);
+if not os.path.isdir(chemin):
+    print('Rajouter le dossier train dans le dossier courant :) ! ');
+else :
+    doConvertion(chemin);
