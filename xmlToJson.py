@@ -13,6 +13,9 @@ def doConvertion(path):
             contenu = openFile.read();
             monJson = xmltodict.parse(contenu)
             fichierSrc = open(path+nameFile+".json", "a");
+            # pour enlever le contenu
+            fichierSrc.seek(0);
+            fichierSrc.truncate();
             fichierSrc.write(json.dumps(monJson));
             fichierSrc.close();
             openFile.close();
