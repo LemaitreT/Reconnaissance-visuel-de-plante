@@ -1,5 +1,5 @@
 /train
 /env
 /.ipynb_checkpoints
-/CNN/train
-/CNN/val
+/CNN/train/*
+/CNN/val/*
