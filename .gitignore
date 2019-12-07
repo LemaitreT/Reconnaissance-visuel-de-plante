@@ -6,3 +6,6 @@
 /CNN/test/*
 /MLP/train/*
 /MLP/val/*
+/MLP/test/*
+/MLP/*
+
